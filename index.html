@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Marvel</title>
+</head>
+
+<body>
+    <header>
+        <h1>API-MARVEL</h1>
+    </header>
+    <form id="buscar">
+        <input type="text" id="personaje" placeholder="Buscar a tu personaje">
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="marvel"></div>
+
+    <div id="carga" class="cargando" style="display: none">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXE1OGRzOTJhMXI5MWdpY2Y5ZnJyZjRkd2djaGRuYWh1M3l6YTdwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vBjLa5DQwwxbi/giphy.gif"
+            alt="Cargando...">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>

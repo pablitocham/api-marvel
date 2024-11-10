@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+#marvel {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buscar {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+}
+
+button:hover {
+    background-color: aqua;
+    color: red;
+    cursor: pointer;
+}
+
+#buscar input {
+    padding: 5px;
+    width: 40%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    background-color: antiquewhite;
+    margin: 5px;
+}
+
+.cargando {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.cargando img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 601px) {
+    #marvel {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #marvel {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+}
